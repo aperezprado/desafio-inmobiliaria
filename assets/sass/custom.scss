@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+$font-family-base: 'Poppins', sans-serif;
+
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+
+$primary: #e8b474;
+$secondary: #2f5b6e;
+$success: #57a42e;
+$info: #73d0e4;
+$warning: #fdc15a;
+$danger: #ee1b60;
+$light:#c0bbba;
+$dark: #141617;
+$white:white;
+
+$theme-colors:(
+    "primary":$primary,
+    "secondary":$secondary,
+    "success":$success,
+    "info":$info,
+    "warning":$warning,
+    "danger":$danger,
+    "light":$light,
+    "dark":$dark,
+);
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+
+
+.card-img-top{
+    @extend .card-img-top;
+    margin-bottom: 1em;
+}
+.card-title{
+    @extend .card-title;
+    text-align: center;
+    font-weight: 600;
+}
+span.info-properties {
+    padding: 1em;
+    i {
+        margin: .5em;
+    }
+}
