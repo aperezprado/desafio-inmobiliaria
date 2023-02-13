@@ -93,7 +93,8 @@ function buscaFiltro(){
             let counter = 0;
             contenedor.innerHTML = '';
             for(let propiedad of propiedades){
-                if(propiedad.cuartos == hab && propiedad.metros >= desde && propiedad.metros <= hasta){
+                //Busca un mínimo de habitaciones en el rango desde y hasta en metraje
+                if(propiedad.cuartos >= hab && propiedad.metros >= desde && propiedad.metros <= hasta){
                     creaDomPropiedad(propiedad);
                     counter++;
                 }
